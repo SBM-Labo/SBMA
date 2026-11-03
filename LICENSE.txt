@@ -1,0 +1,22 @@
+SportsBioMechanicsAnalyzer (SBMA) Terms of Use
+Copyright (c) 2026 Kazutaka Murata (SBM_Labo). All rights reserved.
+
+1. License grant
+   This software may be used free of charge for research, educational and personal purposes.
+   For commercial use (e.g., incorporation into paid services or contract analysis), please contact the author in advance.
+2. Restrictions
+   (1) You may not redistribute, sell, or lend this software (linking to the official download page is welcome).
+   (2) You may not modify, decompile, or reverse engineer this software.
+   Third-party components bundled with this software are governed by their own licenses, which take precedence over these terms (see THIRD_PARTY_NOTICES.md).
+3. Citation
+   If you publish results obtained with this software, please cite it using the citation information (DOI) on the download page.
+4. No warranty / limitation of liability
+   THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DAMAGES ARISING FROM THE USE OF, OR INABILITY TO USE, THIS SOFTWARE.
+   Users are responsible for verifying the validity of analysis results.
+5. Changes
+   These terms may be changed without notice. The latest version is published on the download page.
+
+The installer contains the same terms in Japanese and English.
+
+Contact: Kazutaka Murata <k-murata[at]andrew.ac.jp>
