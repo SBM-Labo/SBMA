@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "SportsBioMechanicsAnalyzer (SBMA)"
+abstract: >-
+  A freely available Windows desktop application for marker-less two- and
+  three-dimensional sports motion analysis from ordinary video. It integrates
+  multi-camera synchronisation, camera calibration (2D/3D DLT, the 3D CC method
+  using feature points on the field, and ChArUco stereo calibration),
+  deep-learning pose estimation (RF-DETR and RTMPose, 23 body points) with
+  manual correction, Butterworth smoothing with automatic cut-off selection
+  (Winter's residual analysis), multi-camera triangulation, kinematic graphs
+  and sport-specific analysis templates into a single workflow. It also imports
+  C3D files with force plates and calculates joint moments by inverse dynamics.
+type: software
+authors:
+  - family-names: "Murata"
+    given-names: "Kazutaka"
+    affiliation: "Faculty of Human Education, Momoyama Gakuin University (St. Andrew's University)"
+    orcid: "https://orcid.org/0009-0004-2725-1333"
+version: "1.5.0"
+date-released: "2026-11-03"
+license-url: "https://github.com/SBM-Labo/SBMA/blob/main/LICENSE.txt"
+url: "https://github.com/SBM-Labo/SBMA"
+repository-artifact: "https://github.com/SBM-Labo/SBMA/releases"
+keywords:
+  - biomechanics
+  - sports
+  - markerless motion capture
+  - human pose estimation
+  - camera calibration
+  - three-dimensional kinematics
+  - inverse dynamics
