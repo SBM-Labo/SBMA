@@ -10,11 +10,43 @@ A description in Japanese is available on [researchmap](https://researchmap.jp/k
 
 ## Screenshots
 
-| Digitizing (pose estimation and correction) | 3D visualization and analysis templates |
-|---|---|
-| <img src="docs/images/sbma_digitize.jpg" alt="SBMA digitizing screen with the estimated skeleton overlaid on a tennis video"> | <img src="docs/images/sbma_viz.jpg" alt="SBMA 3D view of a tennis stroke with the estimated ball speed and flight distance"> |
+The user interface is in Japanese. The numbers in the screenshots are explained below each image.
 
-The user interface is in Japanese.
+### Digitizing (pose estimation and correction)
+
+<img src="docs/images/sbma_digitize.jpg" alt="SBMA digitizing screen with the estimated skeleton overlaid on a tennis video">
+
+1. Camera selection and opening a video
+2. Motion import (existing results in `.hpe` or MotionDigitizer `.mdp` format) and the coordinate table (can be copied to Excel)
+3. Switch between body points and additional points (e.g., a ball)
+4. Person selection
+5. List of joints ("あり" = data available). Select a joint and click its correct position on the video to correct it.
+6. Digitizing interval, automatic advance after each click, and reverse digitizing
+7. Copy the current point to all earlier or all later frames
+8. Data cleansing (correction of left/right swaps)
+9. Delete: earlier frames, current frame, later frames, or the whole person (for the selected point or the whole body)
+10. Re-estimation of the current frame or of all frames
+11. Undo / redo
+12. Video with the bounding box and skeleton of each person
+13. Playback bar (the range on the right is given in frame numbers of the original video)
+14. Go to 3D visualization (coordinates are converted automatically)
+
+### 3D visualization and analysis templates
+
+<img src="docs/images/sbma_viz.jpg" alt="SBMA 3D view of a tennis stroke with the estimated ball speed and flight distance">
+
+1. Style, graph and stroboscopic-figure panels
+2. Layout of the 3D view, camera videos and graphs
+3. Camera viewpoint (free, XY, YZ, XZ)
+4. Floor grid and coordinate axes
+5. Overlay of the 3D figure on the camera video with lens-distortion correction (for the CC method calibrated with intrinsic parameters)
+6. Smoothing and display of the centre of mass
+7. Detailed settings (e.g., the smoothing cut-off frequency)
+8. Analysis templates (here: tennis stroke. The ball speed, angle and estimated flight distance are shown in the 3D view)
+9. 3D view
+10. Camera videos
+11. Playback bar
+12. Interval timer (stopwatch)
 
 ## Features
 
