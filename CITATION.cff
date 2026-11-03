@@ -19,6 +19,7 @@ authors:
     orcid: "https://orcid.org/0009-0004-2725-1333"
 version: "1.5.0"
 date-released: "2026-11-03"
+doi: "10.5281/zenodo.23916814"
 license-url: "https://github.com/SBM-Labo/SBMA/blob/main/LICENSE.txt"
 url: "https://github.com/SBM-Labo/SBMA"
 repository-artifact: "https://github.com/SBM-Labo/SBMA/releases"

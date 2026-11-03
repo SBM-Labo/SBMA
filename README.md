@@ -1,5 +1,7 @@
 # SportsBioMechanicsAnalyzer (SBMA)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23916814.svg)](https://doi.org/10.5281/zenodo.23916814)
+
 A free Windows desktop application for marker-less 2D/3D sports motion analysis from ordinary video.
 From video synchronisation and camera calibration to AI pose estimation, 3D reconstruction, graphs and sport-specific measures, everything is done in one workflow.
 It can also import VICON C3D files with force plates and calculate joint moments by inverse dynamics.
@@ -7,6 +9,10 @@ It can also import VICON C3D files with force plates and calculate joint moments
 A description in Japanese is available on [researchmap](https://researchmap.jp/kazutaka-murata/research_blogs).
 
 **[⬇ Download the latest version (Releases)](https://github.com/SBM-Labo/SBMA/releases/latest)**
+
+<img src="docs/images/sbma_sample.gif" alt="Sample: 3D stick figure of a tennis stroke reconstructed from two cameras, with the estimated ball speed, launch angle and flight trajectory">
+
+*Sample: a tennis stroke recorded with two cameras (right), reconstructed in 3D with the racket and the ball (left). The ball speed, launch angle and estimated flight distance are calculated by the tennis analysis template. The animation was exported from SBMA as a video (slow motion).*
 
 ## Screenshots
 
@@ -90,7 +96,9 @@ The training data of the pose estimation models (e.g., COCO) has its own terms o
 
 If you publish results obtained with this software, please cite it as follows ([CITATION.cff](CITATION.cff)).
 
-> Murata, K. SportsBioMechanicsAnalyzer (SBMA) (Version 1.5.0) [Computer software]. SBM_Labo. https://github.com/SBM-Labo/SBMA
+> Murata, K. (2026). *SportsBioMechanicsAnalyzer (SBMA)* (Version 1.5.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23916814
+
+Please state the version you used. The DOI above always resolves to the latest version; each version also has its own DOI, listed on the [Zenodo page](https://doi.org/10.5281/zenodo.23916814).
 
 ## Bug reports and contact
 
