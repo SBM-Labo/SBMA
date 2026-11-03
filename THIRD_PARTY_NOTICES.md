@@ -18,6 +18,7 @@ precedence over the Terms of Use of this software. Full license texts are in the
 | `licenses/GPL-3.0.txt` | GNU General Public License v3 |
 | `licenses/LGPL-2.1.txt` | GNU Lesser General Public License v2.1 |
 | `licenses/LGPL-3.0.txt` | GNU Lesser General Public License v3 |
+| `licenses/OpenCV-3rdparty-macOS.txt` | macOS 版に静的リンクした libjpeg-turbo・libpng・zlib のライセンス（原文のまま） |
 
 ---
 
@@ -90,7 +91,7 @@ limitations under the License.
 
 ---
 
-## 3. OpenCV と依存 DLL（Windows 版） / OpenCV and its DLLs (Windows)
+## 3. OpenCV（Windows 版の DLL／macOS 版の静的リンク） / OpenCV (Windows DLLs / macOS static linking)
 
 ChArUco ボード検出・単眼内部校正・ステレオ校正は、本ソフトウェアのネイティブアドオン `opencv_module.node`（本ソフトウェアのコード）が
 OpenCV を**動的リンク**して実行します。Windows 版は vcpkg でビルドした OpenCV と依存 DLL をインストール先の `resources/opencv/` に同梱します。
@@ -118,7 +119,24 @@ v1.4.0 ではネイティブアドオンを highgui なしで再ビルドし、*
 これらを同梱した版（v1.3 以前）では、Qt 5 は LGPL-3.0（`licenses/LGPL-3.0.txt`, `licenses/GPL-3.0.txt`）に基づき動的リンクで利用しており、
 利用者は互換の DLL に差し替えることができます。Qt 5 のソースコード: https://download.qt.io/archive/qt/5.15/
 
-macOS 版には OpenCV ライブラリを同梱していません。
+### macOS 版 / macOS
+
+macOS 版は、OpenCV 4.13.0（opencv の core, imgproc, imgcodecs, videoio, calib3d, features2d, flann, objdetect と opencv_contrib の aruco）を
+ソースから静的ライブラリとしてビルドし、ネイティブアドオン `opencv_module.node` に**静的リンク**しています（OpenCV の共有ライブラリは同梱しません）。
+画像の読み書きには OpenCV に同梱の libjpeg-turbo・libpng・zlib を使い、動画の読み込みには macOS 標準の AVFoundation を使います（OpenCV に FFmpeg は組み込んでいません）。
+
+The macOS version statically links OpenCV 4.13.0 (the modules listed above and the aruco module of opencv_contrib) and the bundled
+libjpeg-turbo, libpng and zlib into the native add-on `opencv_module.node`. Video is read through the macOS AVFoundation framework.
+
+| コンポーネント | 版 | ライセンス |
+|---|---|---|
+| OpenCV / opencv_contrib（aruco） | 4.13.0 | Apache-2.0（`licenses/Apache-2.0.txt`） |
+| libjpeg-turbo | 3.1.2 | IJG / BSD-3-Clause / Zlib |
+| libpng | 1.6.53 | libpng License |
+| zlib | 1.3.1 | Zlib |
+
+libjpeg-turbo・libpng・zlib のライセンス全文は `licenses/OpenCV-3rdparty-macOS.txt` にあります。
+This software is based in part on the work of the Independent JPEG Group.
 
 ---
 

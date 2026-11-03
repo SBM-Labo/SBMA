@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23916814.svg)](https://doi.org/10.5281/zenodo.23916814)
 
-A free Windows desktop application for marker-less 2D/3D sports motion analysis from ordinary video.
+A free desktop application for Windows and macOS (Apple silicon) for marker-less 2D/3D sports motion analysis from ordinary video.
 From video synchronisation and camera calibration to AI pose estimation, 3D reconstruction, graphs and sport-specific measures, everything is done in one workflow.
 It can also import VICON C3D files with force plates and calculate joint moments by inverse dynamics.
 
@@ -70,19 +70,25 @@ All processing runs on your PC. No video or data is sent to external servers, an
 
 ## Requirements
 
-- Windows 10 / 11 (64-bit)
+- Windows 10 / 11 (64-bit), or macOS 13 Ventura or later on Apple silicon (M1 or later)
 - 8 GB of memory or more (16 GB or more recommended for 4K video or three or more cameras)
-- A DirectX 12 GPU is used automatically for pose estimation (DirectML) if available; otherwise SBMA runs on the CPU.
+- The GPU is used automatically for pose estimation if available (DirectML on Windows, Core ML on macOS); otherwise SBMA runs on the CPU.
 - About 1 GB of disk space for the application, plus space for video caches
 - The user interface is in Japanese.
 
-A macOS (Apple silicon) version will be added later.
-
 ## Installation
+
+### Windows
 
 1. From [Releases](https://github.com/SBM-Labo/SBMA/releases/latest), download `SportsBioMechanicsAnalyzer-Setup-<version>.exe` (the installer; includes the pose estimation models).
 2. Run it, accept the terms of use and install.
 3. If Windows shows "Windows protected your PC", click **More info** → **Run anyway** (this appears because the application is not code-signed).
+
+### macOS (Apple silicon)
+
+1. From [Releases](https://github.com/SBM-Labo/SBMA/releases/latest), download `SportsBioMechanicsAnalyzer-<version>-mac-arm64.dmg` (includes the pose estimation models).
+2. Open the dmg and drag **SportsBioMechanicsAnalyzer** to the **Applications** folder.
+3. Start it from the Applications folder. The application is signed and notarized by Apple; on the first start, click **Open** when macOS asks whether to open an application downloaded from the Internet.
 
 ## Terms of use
 
