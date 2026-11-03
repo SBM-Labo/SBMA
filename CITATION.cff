@@ -2,7 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "SportsBioMechanicsAnalyzer (SBMA)"
 abstract: >-
-  A freely available Windows desktop application for marker-less two- and
+  A freely available desktop application for Windows and macOS (Apple silicon)
+  for marker-less two- and
   three-dimensional sports motion analysis from ordinary video. It integrates
   multi-camera synchronisation, camera calibration (2D/3D DLT, the 3D CC method
   using feature points on the field, and ChArUco stereo calibration),
